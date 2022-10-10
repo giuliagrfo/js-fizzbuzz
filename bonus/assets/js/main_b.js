@@ -11,20 +11,29 @@ const listElement = document.querySelector('ul.list');
 for (let i = 1; i <= 100; i++){
     // console.log(i);
     if (i % 3 === 0 && i % 5 === 0){
-        let liElement = `<li class="fizzbuzz">FizzBuzz</li>`;
-        listElement.insertAdjacentHTML('beforeend', liElement);
+        const ul = document.querySelector('ul.list');
+        const li = document.createElement('li');
+        li.append('Fizzbuzz');
+        ul.append(li);
         // console.log('FizzBuzz');
     } else if (i % 3 == 0){
-        let liElement = `<li class="fizz">Fizz</li>`;
-        listElement.insertAdjacentHTML('beforeend', liElement);
+        const ul = document.querySelector('ul.list');
+        const li = document.createElement('li');
+        li.append('Fizz');
+        ul.append(li);
         // console.log('Fizz');
     } else if (i % 5 === 0){
-        let liElement = `<li class="buzz">Buzz</li>`;
-        listElement.insertAdjacentHTML('beforeend', liElement);
+        const ul = document.querySelector('ul.list');
+        const li = document.createElement('li');
+        li.append('Buzz');
+        ul.append(li);
         // console.log('Buzz');
     } else {
-        let liElement = `<li class="number">${i}</li>`;
-        listElement.insertAdjacentHTML('beforeend', liElement);
+        const ul = document.querySelector('ul.list');
+        const li = document.createElement('li');
+        li.append(`${i}`);
+        ul.append(li);
+     
     }
     
 }
