@@ -2,6 +2,33 @@ body {
     background-color: #083b4c;
 }
 
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 li {
     list-style: none;
+    width: 80px;
+    height: 80px;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fizzbuzz {
+    background-color: #f0466f;
+}
+
+.fizz {
+    background-color: #0bd6a1;
+}
+
+.buzz {
+    background-color: #ffd166;
+}
+
+.number {
+    background-color: #1389b2;
 }
